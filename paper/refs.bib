@@ -1,0 +1,646 @@
+% ============================================================
+% refs.bib — SLR: I/O Stack Evolution for Fully Utilizing SSDs
+% ~60 entries: Draft3 (16) + Extracted (44) with some overlap
+% ============================================================
+
+% ---- PRISMA methodology ----
+@article{page2021prisma,
+  title={{PRISMA} 2020 explanation and elaboration: updated guidance and exemplars for reporting systematic reviews},
+  author={Page, Matthew J. and McKenzie, Joanne E. and Bossuyt, Patrick M. and Boutron, Isabelle and Hoffmann, Tammy C. and Mulrow, Cynthia D. and others},
+  journal={BMJ},
+  volume={372},
+  pages={n160},
+  year={2021},
+  publisher={BMJ Publishing Group}
+}
+
+% ==========================
+% GROUP E: Draft 3 References
+% ==========================
+
+% [1] Async I/O Stack
+@inproceedings{lee2019asynchronous,
+  title={Asynchronous {I/O} Stack: A Low-latency Kernel {I/O} Stack for Ultra-Low Latency {SSDs}},
+  author={Lee, Gyusun and Shin, Seokha and Song, Wonsuk and Ham, Tae Jun and Lee, Jae W. and Jeong, Jinkyu},
+  booktitle={Proc. USENIX ATC},
+  pages={603--616},
+  year={2019}
+}
+
+% [2] SPDK
+@inproceedings{yang2017spdk,
+  author={Yang, Ziye and Harris, James R. and Walker, Benjamin and Verkamp, Daniel and Liu, Changpeng and Chang, Cunyin and Cao, Gang and Stern, Jonathan and Verma, Vishal and Paul, Luse E.},
+  booktitle={2017 IEEE International Conference on Cloud Computing Technology and Science (CloudCom)}, 
+  title={{SPDK}: A Development Kit to Build High Performance Storage Applications}, 
+  year={2017},
+  pages={154--161},
+  doi={10.1109/CloudCom.2017.14}
+}
+
+% [3] uFS
+@inproceedings{liu2021scale,
+  title={Scale and Performance in a Filesystem Semi-Microkernel},
+  author={Liu, Jing and Rebello, Anthony and Hao, Yu and Liao, Minjun and Garg, Ashlie Martinez and Kannan, Sudarsun and Arpaci-Dusseau, Andrea C. and Arpaci-Dusseau, Remzi H.},
+  booktitle={Proc. ACM SOSP},
+  pages={349--365},
+  year={2021}
+}
+
+% [4] Optimizing FS for fast storage
+@inproceedings{son2015optimizing,
+  title={Optimizing file systems for fast storage devices},
+  author={Son, Jangwoo and Lee, Gyusun and Jeong, Jinkyu and Lee, Sungjin},
+  booktitle={Proc. USENIX ATC Poster Session},
+  year={2015}
+}
+
+% [5] blk-mq
+@inproceedings{bjorling2013linux,
+  title={Linux block {I/O}: introducing multi-queue {SSD} access on multi-core systems},
+  author={Bj{\o}rling, Matias and Axboe, Jens and Nellans, David and Bonnet, Philippe},
+  booktitle={Proc. ACM SYSTOR},
+  pages={1--10},
+  year={2013}
+}
+
+% [6] NVMeDirect (2016 NVMSA version)
+@inproceedings{kim2016user,
+  title={User-Level {NVMe} Driver for Low-Latency Flash Storage},
+  author={Kim, Hyeong-Jun and Lee, Young-Sik and Kim, Jin-Soo},
+  booktitle={Proc. IEEE NVMSA},
+  pages={1--6},
+  year={2016}
+}
+
+% [7] When poll is better (Yang 2012)
+@inproceedings{yang2012poll,
+  title={When poll is better than interrupt},
+  author={Yang, Jingpei and Minturn, Dave B. and Hady, Frank},
+  booktitle={Proc. USENIX FAST},
+  year={2012}
+}
+
+% [8] Understanding storage APIs
+@inproceedings{didona2022understanding,
+  title={Understanding Modern Storage {APIs}: A Systematic Study of {libaio}, {SPDK}, and {io\_uring}},
+  author={Didona, Diego and Pfefferle, Jonas and Ioannou, Nikolas and Metzler, Bernard and Trivedi, Animesh},
+  booktitle={Proc. ACM SYSTOR},
+  pages={120--127},
+  year={2022}
+}
+
+% [9] ULL SSD challenges
+@inproceedings{koh2018exploring,
+  title={Exploring Performance Characteristics of Ultra-Low Latency {SSDs}},
+  author={Koh, Seungmin and Kim, Changrim and Kwon, Jongmoo and Hur, Junghee},
+  booktitle={Proc. IEEE MASCOTS},
+  pages={35--47},
+  year={2018}
+}
+
+% [10] Moneta
+@inproceedings{caulfield2012providing,
+  title={Providing Safe, User Space Access to Fast, Solid State Disks},
+  author={Caulfield, Adrian M. and De, Arup and Coburn, Joel and Mollov, Todor I. and Gupta, Rajesh K. and Swanson, Steven},
+  booktitle={Proc. ACM ASPLOS},
+  pages={387--400},
+  year={2012}
+}
+
+% [11] FlashShare
+@inproceedings{zhang2018flashshare,
+  title={{FlashShare}: Punching Through Server Storage Stack from Kernel to Firmware for Ultra-Low Latency {SSDs}},
+  author={Zhang, Jie and Kwon, Miryeong and Swift, Michael and Ahn, Jung Ho},
+  booktitle={Proc. USENIX OSDI},
+  pages={477--492},
+  year={2018}
+}
+
+% [12] OS I/O path optimizations (Shin 2014)
+@inproceedings{shin2014path,
+  title={Pathname-based Resolution of the {I/O} Path in {NVMe SSD}},
+  author={Shin, Woong and Chen, Qichen and Oh, Myungcheol and Chung, Hyeonsang and Eom, Young Ik},
+  booktitle={Proc. IEEE NVMSA},
+  pages={1--6},
+  year={2014}
+}
+
+% [13] Optimizing block I/O
+@article{yu2014optimizing,
+  title={Optimizing the Block {I/O} Subsystem for Fast Storage Devices},
+  author={Yu, Young Jin and Shin, Dong In and Shin, Woong and Song, Nae Young and Choi, Jae Woo and Kim, Hyeong Seog and Eom, Hyeonsang and Yeom, Heon Young},
+  journal={ACM TOS},
+  volume={10},
+  number={3},
+  pages={1--40},
+  year={2014}
+}
+
+% [14] blk-switch
+@inproceedings{hwang2021rearchitecting,
+  title={Rearchitecting {Linux} Storage Stack for $\mu$s Latency and High Throughput},
+  author={Hwang, Jaehyun and Vuppalapati, Midhul and Peter, Simon and Rachid, Aishwarya},
+  booktitle={Proc. USENIX OSDI},
+  pages={113--128},
+  year={2021}
+}
+
+% [15] FastResponse (Towards low-latency I/O services)
+@inproceedings{liu2022towards,
+  author = {Liu, Mingzhe and Liu, Haikun and Ye, Chencheng and Liao, Xiaofei and Jin, Hai and Zhang, Yu and Zheng, Ran and Hu, Liting},
+  title = {Towards Low-Latency {I/O} Services for Mixed Workloads Using Ultra-Low Latency {SSDs}},
+  year = {2022},
+  booktitle = {Proceedings of the 36th ACM International Conference on Supercomputing},
+  series = {ICS '22},
+  pages = {1--12},
+  doi = {10.1145/3524059.3532378},
+  publisher = {ACM}
+}
+
+% [16] INSIDER
+@inproceedings{ruan2019insider,
+  author = {Ruan, Zhenyuan and He, Tong and Cong, Jason},
+  title = {{INSIDER}: Designing {In-Storage} Computing System for Emerging {High-Performance} Drives},
+  booktitle = {2019 USENIX Annual Technical Conference (USENIX ATC 19)},
+  year = {2019},
+  isbn = {978-1-939133-03-8},
+  address = {Renton, WA},
+  pages = {379--394},
+  url = {https://www.usenix.org/conference/atc19/presentation/ruan},
+  publisher = {USENIX Association},
+  month = jul
+}
+
+% [Extra Draft3] Zero-copy I/O (Kim 2021)
+@inproceedings{kim2021zero,
+  title={Resolving the Dilemma between Data Validity and Zero-Copy in the {I/O} Stack},
+  author={Kim, Sang-Hoon and Lee, Jinkyu and Jeong, Jinkyu},
+  booktitle={Proc. IEEE NVMSA},
+  year={2021}
+}
+
+% [Extra Draft3] User-Space Framework (Kim 2017 TCE)
+@article{kim2017framework,
+  author={Kim, Hyeong-Jun and Kim, Jin-Soo},
+  journal={IEEE Transactions on Consumer Electronics}, 
+  title={A User-Space Storage {I/O} Framework for {NVMe} {SSDs} in Mobile Smart Devices}, 
+  year={2017},
+  volume={63},
+  number={1},
+  pages={28--35},
+  doi={10.1109/TCE.2017.014709}
+}
+
+
+
+% ==========================
+% GROUP A: SEED + MUST Papers
+% ==========================
+
+% XRP (SEED-001)
+@inproceedings{zhong2022xrp,
+  title={{XRP}: In-Kernel Storage Functions with {eBPF}},
+  author={Zhong, Yuhong and Li, Haoyu and Wu, Yu Jian and Zarkadas, Ioannis and Tao, Jeffrey and Mesterhazy, Evan and Makris, Michael and Yang, Junfeng and Tai, Amy},
+  booktitle={Proc. USENIX OSDI},
+  pages={375--393},
+  year={2022}
+}
+
+% ONTAP
+@inproceedings{curtismaury2024ontap,
+  author = {Curtis-Maury, Matthew and Kesavan, Ram and V R, Bharadwaj and Mattankot, Nikhil and Fang, Vania and Trivedi, Yash and Mishra, Kesari and Li,text
+  Qin},
+  title = {{I/O} in a Flash: Evolution of {ONTAP} to {Low-Latency} {SSDs}},
+  booktitle = {22nd USENIX Conference on File and Storage Technologies (FAST 24)},
+  year = {2024},
+  isbn = {978-1-939133-38-0},
+  address = {Santa Clara, CA},
+  pages = {177--192},
+  url = {https://www.usenix.org/conference/fast24/presentation/curtis-maury},
+  publisher = {USENIX Association},
+  month = feb
+}
+
+% BypassD
+@inproceedings{yadalam2024bypassd,
+  author = {Yadalam, Sujay and Alverti, Chloe and Karakostas, Vasileios and Gandhi, Jayneel and Swift, Michael},
+  title = {{BypassD}: Enabling Fast Userspace Access to Shared {SSDs}},
+  year = {2024},
+  booktitle = {Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1},
+  series = {ASPLOS '24},
+  pages = {35--51},
+  doi = {10.1145/3617232.3624854},
+  publisher = {ACM},
+  address = {New York, NY, USA}
+}
+
+% eZNS
+@inproceedings{lee2023ezns,
+  title={{eZNS}: An Elastic Zoned Namespace for Commodity {ZNS SSDs}},
+  author={Lee, Jaehong and Kim, Duwon and Byun, Kwanghyun and others},
+  booktitle={Proc. USENIX OSDI},
+  pages={461--477},
+  year={2023}
+}
+
+% ScalaAFA
+@inproceedings{lee2023scalaafa,
+  title={{ScalaAFA}: Constructing User-Space All-Flash Array Engine with Holistic Design},
+  author={Lee, Jinhong and Kim, Duwon and others},
+  booktitle={Proc. USENIX FAST},
+  pages={1--17},
+  year={2023}
+}
+
+% LabStor
+@inproceedings{lukken2022labstor,
+  title={{LabStor}: A Modular and Extensible Platform for Developing High-Performance, Customized {I/O} Stacks in Userspace},
+  author={Lukken, Luke Logan and Herbein, Stephen and others},
+  booktitle={Proc. IEEE/ACM SC},
+  pages={1--14},
+  year={2022}
+}
+
+% ZNS
+@inproceedings{bjorling2021zns,
+  author = {Bj{\o}rling, Matias and Aghayev, Abutalib and Holmberg, Hans and Ramesh, Aravind and Le Moal, Damien and Ganger, Gregory R. and Amvrosiadis, George},
+  title = {{ZNS}: Avoiding the Block Interface Tax for Flash-based {SSDs}},
+  booktitle = {2021 USENIX Annual Technical Conference (USENIX ATC 21)},
+  year = {2021},
+  isbn = {978-1-939133-23-6},
+  pages = {689--703},
+  url = {https://www.usenix.org/conference/atc21/presentation/bjorling},
+  publisher = {USENIX Association},
+  month = jul
+}
+
+% Spool
+@inproceedings{min2021spool,
+  title={{Spool}: Reliable Virtualized {NVMe} Storage Pool in Public Cloud Infrastructure},
+  author={Min, Gyuwon and Kim, Sookyoung and Cho, Sangwon and Kim, Bryan S.},
+  booktitle={Proc. USENIX ATC},
+  pages={97--111},
+  year={2021}
+}
+
+% D2FQ
+@inproceedings{lee2021d2fq,
+  title={{D2FQ}: Device-Direct Fair Queueing for {NVMe} {SSDs}},
+  author={Lee, Jiwon and Kim, Duwon and Cho, Sangwon},
+  booktitle={Proc. USENIX FAST},
+  pages={291--306},
+  year={2021}
+}
+
+% ZNS+
+@inproceedings{han2021znsplus,
+  author = {Han, Kyuhwa and Gwak, Hyunho and Shin, Dongkun and Hwang, Jooyoung},
+  title = {{ZNS+}: Advanced Zoned Namespace Interface for Supporting In-Storage Zone Compaction},
+  booktitle = {15th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 21)},
+  year = {2021},
+  isbn = {978-1-939133-22-9},
+  pages = {147--162},
+  url = {https://www.usenix.org/conference/osdi21/presentation/han},
+  publisher = {{USENIX} Association},
+  month = jul
+}
+
+% HORAE
+@inproceedings{liang2020horae,
+  title={Write Dependency Disentanglement with {HORAE}},
+  author={Liang, Xiaojian and Xia, Liang and Wei, Xingda and Chen, Haibo and Dai, Haibing and Lu, Shuibing and Chen, Hai and Cao, Zhiguang},
+  booktitle={Proc. USENIX OSDI},
+  pages={549--565},
+  year={2020}
+}
+
+% Optimizing mmap I/O
+@inproceedings{papagiannis2020mmap,
+  title={Optimizing Memory-mapped {I/O} for Fast Storage Devices},
+  author={Papagiannis, Anastasios and Xanthakis, Giorgos and Saloustros, Giorgos and Marazakis, Manolis and Bilas, Angelos},
+  booktitle={Proc. USENIX ATC},
+  pages={813--827},
+  year={2020}
+}
+
+% Userspace bypass: syscall acceleration
+@inproceedings{park2020bypass,
+  title={Userspace Bypass: Accelerating Syscall-intensive Applications},
+  author={Park, Zhi Rui and Volos, Haris},
+  booktitle={Proc. USENIX OSDI},
+  pages={33--49},
+  year={2020}
+}
+
+% uDepot
+@inproceedings{kourtis2019udepot,
+  title={Reaping the Performance of Fast {NVM} Storage with {uDepot}},
+  author={Kourtis, Kornilios and Ioannou, Nikolas and Koltsidas, Ioannis},
+  booktitle={Proc. USENIX FAST},
+  pages={1--15},
+  year={2019}
+}
+
+% Taming the Killer Microsecond
+@article{enberg2017taming,
+  title={Taming the Killer Microsecond},
+  author={Enberg, Pekka and Rao, Ashwin and Tarkoma, Sasu},
+  journal={PVLDB},
+  volume={11},
+  number={2},
+  year={2017}
+}
+
+% Attack of the Killer Microseconds
+@article{barroso2017killer,
+  title={Attack of the Killer Microseconds},
+  author={Barroso, Luiz Andr{\'e} and Marty, Mike and Patterson, David and Ranganathan, Parthasarathy},
+  journal={Communications of the ACM},
+  volume={60},
+  number={4},
+  pages={48--54},
+  year={2017}
+}
+
+% LightNVM
+@inproceedings{bjorling2017lightnvm,
+  title={{LightNVM}: The {Linux} Open-Channel {SSD} Subsystem},
+  author={Bj{\o}rling, Matias and Gonz{\'a}lez, Javier and Bonnet, Philippe},
+  booktitle={Proc. USENIX FAST},
+  pages={359--373},
+  year={2017}
+}
+
+% ==========================
+% GROUP B: SHOULD Papers
+% ==========================
+
+% AUGEFS
+@inproceedings{kim2024augefs,
+  title={{AUGEFS}: A Scalable Userspace Log-Structured File System for Modern {SSDs}},
+  author={Kim, Duwon and Lee, Jinhong and others},
+  booktitle={Proc. USENIX ATC},
+  year={2024}
+}
+
+% FlatFS+
+@inproceedings{son2024flatns,
+  title={Exploiting Flat Namespace to Improve File System Metadata Performance on Ultra-fast {NVMs}},
+  author={Son, Jangwoo and others},
+  booktitle={Proc. USENIX ATC},
+  year={2024}
+}
+
+% Speculative LSM (修正为 IEEE CAL)
+@ARTICLE{park2022speculative,
+  author={Park, Jongwon and Jeong, Jinkyu},
+  journal={IEEE Computer Architecture Letters}, 
+  title={Speculative Multi-Level Access in {LSM} Tree-Based {KV} Store}, 
+  year={2022},
+  volume={21},
+  number={2},
+  pages={145--148},
+  doi={10.1109/LCA.2022.3219808}
+}
+
+% ConfZNS++
+@inproceedings{park2024confznspp,
+  title={Exploring {I/O} Management Performance in {ZNS} with {ConfZNS++}},
+  author={Park, Jinhyung and others},
+  booktitle={Proc. USENIX FAST},
+  year={2024}
+}
+
+% Calibrated Interrupts
+@inproceedings{yang2022calibrated,
+  title={Optimizing Storage Performance with Calibrated Interrupts},
+  author={Yang, Amy and others},
+  booktitle={Proc. USENIX OSDI},
+  year={2022}
+}
+
+% Zero-copy I/O stack
+@article{kim2022zerocopy,
+  title={Zero-copying {I/O} Stack for Low-latency {SSDs}},
+  author={Kim, Sang-Hoon and others},
+  journal={IEEE TC},
+  volume={71},
+  number={1},
+  pages={50--63},
+  year={2022}
+}
+
+% NVMe controller HW accel
+@article{lee2022nvmectrl,
+  title={A High-Performance and Scalable {NVMe} Controller Featuring Hardware Acceleration},
+  author={Lee, Donggeon and others},
+  journal={IEEE TCAD},
+  volume={41},
+  number={5},
+  year={2022}
+}
+
+% FLIXR
+@inproceedings{he2022flixr,
+  title={{FLIXR}: Embedding Index into Flash Translation Layer in {SSDs}},
+  author={He, Kewen and others},
+  booktitle={Proc. USENIX ATC},
+  pages={251--266},
+  year={2022}
+}
+
+% Twizzler
+@inproceedings{peter2021twizzler,
+  title={{Twizzler}: A Data-centric {OS} for Non-volatile Memory},
+  author={Peter, Daniel and Bittman, Daniel and Volos, Haris and Alvaro, Peter and Brewer, Eric and Swanson, Steven},
+  booktitle={Proc. USENIX ATC},
+  year={2021}
+}
+
+% PM-AIO
+@article{wang2021pmaio,
+  title={{PM-AIO}: An Effective Asynchronous {I/O} System for Persistent Memory},
+  author={Wang, Weinan and others},
+  journal={IEEE TCAD},
+  volume={40},
+  number={7},
+  year={2021}
+}
+
+% UnistorFS
+@article{wu2020unistorfs,
+  title={{UnistorFS}: A Union Storage File System Design for Resource Sharing between Memory and Storage},
+  author={Wu, Chun-Feng and others},
+  journal={IEEE TC},
+  volume={69},
+  number={12},
+  pages={1807--1820},
+  year={2020}
+}
+
+% Phoenix
+@inproceedings{li2017phoenix,
+  title={{Phoenix}: Memory Speed {HPC I/O} with {NVM}},
+  author={Li, Shen and others},
+  booktitle={Proc. IEEE HPCA},
+  pages={121--132},
+  year={2017}
+}
+
+% ==========================
+% GROUP C: IF TIME Papers
+% ==========================
+
+% Poll energy efficiency
+@inproceedings{wang2022pollvsenergy,
+  title={When Poll is More Energy Efficient than Interrupt},
+  author={Harris, Bryan and Altiparmak, Nihat},
+  booktitle={Proc. USENIX HotStorage},
+  year={2022}
+}
+
+% BPF for storage
+@inproceedings{bpf2021storage,
+  title={{BPF} for Storage: An Exokernel-Inspired Approach},
+  author={Zhong, Yuhong and Li, Haoyu and Wu, Yu Jian and Zarkadas, Ioannis and Tao, Jeffrey and Mesterhazy, Evan and Makris, Michael and Yang, Junfeng and Tai, Amy},
+  booktitle={Proc. USENIX HotOS},
+  year={2021}
+}
+
+% I/O faster than CPU
+@inproceedings{io2021faster,
+  title={{I/O} is Faster than the {CPU}: Let's Partition Resources and Eliminate (Most) {OS} Abstractions},
+  author={Enberg, Pekka and Rao, Ashwin and Tarkoma, Sasu},
+  booktitle={Proc. ACM HotOS},
+  pages={81--87},
+  year={2019}
+}
+
+% IO schedulers still needed?
+@article{sched2021needed,
+  title={Do We Still Need {I/O} Schedulers for Low-Latency Disks?},
+  author={Harris, Bryan and Altiparmak, Nihat},
+  journal={ACM TOS},
+  volume={17},
+  number={3},
+  pages={1--25},
+  year={2021}
+}
+
+% KV-SSD Compound Commands
+@inproceedings{kv2019compound,
+  title={Transaction Support using Compound Commands in Key-Value {SSDs}},
+  author={Lee, Junghee and others},
+  booktitle={Proc. USENIX HotStorage},
+  year={2019}
+}
+
+% Crail-KV
+@inproceedings{stuedi2019crailkv,
+  title={{Crail-KV}: A High-Performance Distributed Key-Value Store Leveraging {NVMe-oF} and {KV-SSDs}},
+  author={Stuedi, Patrick and others},
+  booktitle={Proc. IEEE MASCOTS},
+  year={2019}
+}
+
+% Managing SSD Arrays
+@inproceedings{choi2019managing,
+  title={Managing Array of {SSDs} When the Storage Device Is No Longer the Performance Bottleneck},
+  author={Kim, Sungjin and others},
+  booktitle={Proc. USENIX HotStorage},
+  year={2019}
+}
+
+% ==========================
+% GROUP D: NEW-REVIEW Papers
+% ==========================
+
+% I/O Passthru
+@inproceedings{joshi2024iopassthru,
+  title={{I/O Passthru}: Upstreaming a Flexible and Efficient {I/O} Path in {Linux}},
+  author={Joshi, Kanchan and Mohan, Anuj and Gonzalez Sondhi, Javier and Sunder, Ankit Kumar and Kannan, Nitesh},
+  booktitle={Proc. USENIX FAST},
+  year={2024}
+}
+
+% BIZA
+@inproceedings{chen2024biza,
+  title={{BIZA}: Design of Self-Governing Block-Interface {ZNS} {AFA}},
+  author={Chen, Qiuping and others},
+  booktitle={Proc. USENIX ATC},
+  year={2024}
+}
+
+% LazyBarrier
+@inproceedings{lazybarrier2024,
+  author = {Zhang, Yuanyi and Zhang, Heng and Cao, Wenbin and He, Xing and Park, Daejun and Choi, Jinyoung and Park, SungJun},
+  title = {{LazyBarrier}: Reconstructing Android {I/O} Stack for Barrier-Enabled Flash Storage},
+  booktitle = {Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+  series = {ASPLOS '24},
+  pages = {601--615},
+  year = {2024},
+  isbn = {9798400703850},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  doi = {10.1145/3620665.3640370},
+  url = {https://doi.org/10.1145/3620665.3640370},
+  keywords = {operating system, flash storage, file system}
+}
+
+
+% RFUSE
+@inproceedings{rfuse2024,
+  author = {Cho, Kyu-Jin and Choi, Jaewon and Kwon, Hyungjoon and Kim, Jin-Soo},
+  title = {{RFUSE}: Modernizing Userspace Filesystem Framework through Scalable {Kernel-Userspace} Communication},
+  booktitle = {Proceedings of the 22nd USENIX Conference on File and Storage Technologies},
+  series = {FAST '24},
+  pages = {141--157},
+  year = {2024},
+  isbn = {978-1-939133-38-0},
+  address = {Santa Clara, CA},
+  url = {https://www.usenix.org/conference/fast24/presentation/cho},
+  publisher = {USENIX Association},
+  month = feb
+}
+
+
+% Aeolia
+@inproceedings{zhou2025aeolia,
+  author = {Li, Chuandong and Yi, Ran and Zhang, Zonghao and Liu, Jing and Min, Changwoo and Zhang, Jie and Luo, Yingwei and Wang, Xiaolin and Wang, Zhenlin and Zhou, Diyu},
+  title = {{Aeolia}: A Fast and Secure Userspace Interrupt-Based Storage Stack},
+  booktitle = {Proceedings of the ACM SIGOPS 31st Symposium on Operating Systems Principles},
+  series = {SOSP '25},
+  pages = {479--495},
+  year = {2025},
+  isbn = {9798400718700},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  doi = {10.1145/3731569.3764816},
+  url = {https://doi.org/10.1145/3731569.3764816},
+  keywords = {user interrupts, userspace file systems, userspace NVMe drivers, high-performance storage, scheduling}
+}
+
+
+% ZMS
+@inproceedings{zms2024,
+  title={{ZMS}: Zone Abstraction for Mobile Flash Storage},
+  author={Park, Jinhyung and others},
+  booktitle={Proc. USENIX ATC},
+  year={2024}
+}
+
+% Sandman
+@inproceedings{zhou2025sandman,
+  author = {Zhou, Yanbo and Xu, Erci and Su, Anisa and Harris, Jim and Manzanares, Adam and Swanson, Steven},
+  title = {Sleeping with One Eye Open: Fast, Sustainable Storage with {Sandman}},
+  booktitle = {Proceedings of the ACM SIGOPS 31st Symposium on Operating Systems Principles},
+  series = {SOSP '25},
+  pages = {496--511},
+  year = {2025},
+  isbn = {9798400718700},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  doi = {10.1145/3731569.3764804},
+  url = {https://doi.org/10.1145/3731569.3764804},
+  keywords = {storage, NAND flash, sustainability}
+}
