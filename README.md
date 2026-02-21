@@ -86,15 +86,15 @@ While this SLR focuses on the software I/O stack between kernel and NVMe SSDs, t
 ## Citation
 
 ```bibtex
-@article{liang2026iostack,
-  title={A Systematic Literature Review of {I/O} Stack Evolution for Fully Utilizing {SSDs}},
+@article{liang2025iostack,
+  title={A Systematic Literature Review of {I/O} Stack Evolution
+         for Fully Utilizing {SSDs}},
   author={Liang, Dawen and Cai, Hengbo},
-  year={2026},
+  year={2025},
   publisher={Zenodo},
-  howpublished={\url{[https://doi.org/10.5281/zenodo.18636357](https://doi.org/10.5281/zenodo.18636357)}},
-  note={GitHub Repository: \url{[https://github.com/keith-leung/ullssd-iostack-kernelbypass](https://github.com/keith-leung/ullssd-iostack-kernelbypass)}}
+  howpublished={\url{https://doi.org/10.5281/zenodo.18636357}},
+  note={GitHub: \url{https://github.com/keith-leung/ullssd-iostack-kernelbypass}}
 }
-
 ```
 
 ## License
