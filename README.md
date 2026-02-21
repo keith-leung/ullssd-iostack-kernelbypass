@@ -71,6 +71,18 @@ The review organizes I/O stack optimizations into three architectural paths:
 | **Hybrid** | XRP (eBPF), I/O Passthru, RFUSE | Selectively bypass specific kernel layers |
 | **Full Bypass** | SPDK, uFS, BypassD, Sandman, Aeolia | Remove the kernel entirely from the data path |
 
+
+## Related Work
+
+This SLR is complemented by our survey on CXL memory disaggregation:
+
+> **A Systematic Survey of CXL Type-3 Devices: Evolution, Architectures, and Future Directions for Memory-Intensive Computing**
+> Dawen Liang, Syracuse University
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18719754.svg)](https://doi.org/10.5281/zenodo.18719754)
+> GitHub: [keith-leung/cxl-type3-memory-survey](https://github.com/keith-leung/cxl-type3-memory-survey)
+
+While this SLR focuses on the software I/O stack between kernel and NVMe SSDs, the CXL survey examines the emerging memory tier above storage—where CXL Type-3 devices are reshaping the DRAM-storage boundary.
+
 ## Citation
 
 ```bibtex
